@@ -104,5 +104,5 @@ else:
     else:
        f.append("")
 d["地址"]=f
-js=json.dumps(d,ensure_ascii=False,indent=4)
+js=json.dumps(d,ensure_ascii=False)
 print(js)
