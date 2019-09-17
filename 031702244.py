@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import re
 import json
@@ -103,14 +104,5 @@ else:
     else:
        f.append("")
 d["地址"]=f
-js=json.dumps(d)
+js=json.dumps(d,ensure_ascii=False,indent=4)
 print(js)
-
-
-
-
-
-
-
-
-
